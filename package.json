@@ -1,0 +1,32 @@
+{
+  "name": "agentsdk",
+  "version": "0.1.0",
+  "description": "Unified SDK for AI coding agents (Cursor, Windsurf, Vercel, Replit, etc.)",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "bin": {
+    "agentsdk": "./dist/cli.js"
+  },
+  "scripts": {
+    "build": "tsc",
+    "dev": "tsc --watch",
+    "example:cursor-clone": "ts-node examples/cursor-clone/index.ts",
+    "example:remote-cli": "ts-node examples/remote-cli/index.ts"
+  },
+  "keywords": ["ai", "agent", "sdk", "cursor", "windsurf", "coding"],
+  "author": "",
+  "license": "MIT",
+  "dependencies": {
+    "@cursor/sdk": "^1.0.12",
+    "commander": "^11.0.0",
+    "dotenv": "^16.0.0"
+  },
+  "devDependencies": {
+    "@types/node": "^20.0.0",
+    "@types/inquirer": "^9.0.0",
+    "ts-node": "^10.9.0",
+    "typescript": "^5.0.0",
+    "@types/commander": "^2.12.0",
+    "@types/dotenv": "^6.0.0"
+  }
+}
